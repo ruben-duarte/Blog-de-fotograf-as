@@ -27,6 +27,10 @@ p{
     font-size: 1.5rem;
 }
 
+.post-label p{
+    color: #0c1324;
+}
+
 
 /* -- ------------Navegarion--------------- -- */
 .navegation{
@@ -119,6 +123,12 @@ p{
 }
 /* -- ------------viajes--------------- */
 
+#viajes  h1{
+    margin-top: 60px;
+    margin-left: 380px;
+    margin-bottom: 40px;
+}
+
 .travel-content{
     min-height: 100vh;
 }
@@ -126,6 +136,13 @@ p{
     display: grid;
     grid-template-columns: 70% 30%;
    
+}
+
+button:hover{
+    color:#0c1324;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
 }
 .post-content{
     width: 100%;
@@ -151,10 +168,12 @@ p{
 
 .travel-content .post-content>.post-image .img{
     width: 100%;
-    transition: all 2s ease;
+    transition: all 1.8s ease;
+    border-radius: 14px;
 }
 .travel-content .post-content>.post-image .img:hover{
     transform: scale(1.3);
+
 }
 .travel-content .post-content>.post-image .post-info span{
     margin: 0.5rem;
@@ -227,6 +246,7 @@ p{
 .carousel-button:focus{
     color: #47B5FF;
     background-color:rgba(0, 0, 0, .5) ;
+    font-size: 4rem;
 }
 
 .carousel-button:focus{
@@ -237,4 +257,157 @@ p{
 }
 .carousel-button.next{
     right: 1rem;
+}
+
+
+/* ------------------proyectos---------------- */
+
+#proyectos  h1{
+    margin-top: 60px;
+    margin-left: 380px;
+    margin-bottom: 40px;
+}
+
+
+/* ---------------Ingenieria--------------- */
+.post-image .image{
+    border-radius: 12px;
+    margin-left: 350px;
+    width: 350px;
+}
+
+#ingenieria  h1{
+    margin-top: 60px;
+    margin-left: 380px;
+    margin-bottom: 40px;
+}
+
+.sidebar .post-label{
+    width: 250px;
+}
+
+
+
+/* ------------Contact-------------- */
+
+.row{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact-left{
+    flex-basis: 30%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #47B5FF;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.8s;
+}
+.social-icons a:hover{
+    color: #47B5FF;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #47B5FF;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.btn.btn2:hover{
+    background-color: #121b31;
+    color: #47B5FF;
+}
+
+/* -----------CSS for small screen  CSqueries --------------- */
+
+@media only screen and (max-width: 600px){
+    .header-container h1{
+        margin-left: 150px;
+    }
+    #home .main-section .first-section{
+        width: 150px;
+    }
+    .second-section h2,p{
+        display: none;
+
+    }
+    #viajes h1{
+        margin-left: 140px;
+    }
+    #viajes .sidebar{
+        display: none;
+    }
+
+    .travel-content .post-title p{
+        font-size: 12px;
+        color: #47B5FF;
+    }
+
+    #proyectos  h1{
+        margin-left: 120px;
+
+    }
+    aside{
+        display: none;
+    }
+
+    #ingenieria  h1{
+        margin-left: 140px;
+    }
+    .post-content .post-image img{
+        margin-left: 70px;
+    }
+
+
+
 }
