@@ -121,6 +121,10 @@ p{
     justify-content: center;
  
 }
+
+#home .main-section img{
+    width: 700px;
+}
 /* -- ------------viajes--------------- */
 
 #viajes  h1{
@@ -377,10 +381,18 @@ form .btn2{
     #home .main-section .first-section{
         width: 150px;
     }
-    .second-section h2,p{
-        display: none;
-
+    .second-section h2{
+       font-size: 10px;
     }
+
+    .second-section p{
+        display: none;
+    }
+
+    #home{
+        height: 100vh;
+    }
+
     #viajes h1{
         margin-left: 140px;
     }
@@ -405,7 +417,29 @@ form .btn2{
         margin-left: 140px;
     }
     .post-content .post-image img{
-        margin-left: 70px;
+        margin-left: 20px;
+    }
+    #viajes .travel-content .post-content .post-image img{
+        width: 360px;
+        margin-left: 15px;
+    
+        
+    }
+
+    #home .main-section img{
+        width: 390px;
+        display: block;
+        margin-left: -40px;
+        margin-right: auto;
+        width: 290px;
+    }
+   .second-section a{
+    top: 50%;
+    }
+    .second-section a:hover{
+        background: transparent;
+        border: 1px solid white;
+        color: white;
     }
 
 
